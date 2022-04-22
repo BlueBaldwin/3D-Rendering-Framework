@@ -1,0 +1,55 @@
+#git ignore file for CT5036
+
+# Ignore VS2019 generated folder
+**/.vs/
+
+# ignore user preferences VS file
+*.vcxproj.user
+
+# Prerequisites
+*.d
+
+# Compiled Object Files
+*.slo
+*.lo
+*.o
+*.obj
+*.pdb
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.app
+*.lib
+
+#Executables
+*.exe
+*.out
+*.app
+
+#ignore build and intermediate directories
+**/obj/
+**/bin/
+**/lib/
+**/build/
+**/intermediate/
+
+# Allow specific files that may be covered by the above rule
+!**/obj_loader\obj_models/*.obj
+!**/resource\models/*.obj
+!**/deps/**/libs/**/*.lib
+!**/deps/**/libs/**/*.pdb
+
